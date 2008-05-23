@@ -4,8 +4,8 @@ I couldn't make sense of some of the others, so I wrote my own.
 
 h2. Usage
 
-script/plugin install git://github.com/seven1m/simple_restful_openid.git
-script/generate simple_restful_openid
+<pre class="console"><code>script/plugin install git://github.com/seven1m/simple_restful_openid.git
+script/generate simple_restful_openid</code></pre>
 
 To sign in, browse to /session/new
 
