@@ -32,8 +32,10 @@ class SessionsController < ApplicationController
     url = request.protocol + request.host_with_port + request.relative_url_root + request.path
     response = consumer.complete(params.reject { |k, v| k !~ /^openid\./ }, url)
     if response.status == :success
+      # Awesome! Set the user identity url in the session
       session[:url] = response.identity_url
-      redirect_to snippets_path
+      # redirect somewhere useful
+      redirect_to '/'
     else
       flash[:notice] = 'Failure signing in with OpenID.'
       redirect_to new_session_path
