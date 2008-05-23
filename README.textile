@@ -1,6 +1,8 @@
 h1. simple_restful_openid plugin
 
-I couldn't make sense of some of the others, so I wrote my own.
+Some of the other plugins in the wild were more complex than I needed, so I wrote my own.
+
+This plugin is basically just a generator. You can delete the plugin once you run it.
 
 h2. Usage
 
