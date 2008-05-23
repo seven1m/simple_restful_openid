@@ -1,0 +1,8 @@
+Description:
+    Generates a Sessions controller and adds a resource route for it.
+
+Example:
+    ./script/generate simple_restful_openid
+
+    This will create:
+        app/controllers/sessions_controller.rb

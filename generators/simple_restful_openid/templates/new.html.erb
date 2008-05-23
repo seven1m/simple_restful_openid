@@ -1,0 +1,7 @@
+<% form_tag session_url, :method => :post do %>
+  <p>
+    <label for="url">OpenID URL:</label>
+    <%= text_field_tag :url %>
+    <%= submit_tag 'Sign In' %>
+  </p>
+<% end %>

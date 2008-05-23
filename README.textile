@@ -1,0 +1,16 @@
+h1. simple_restful_openid plugin
+
+I couldn't make sense of some of the others, so I wrote my own.
+
+h2. Usage
+
+script/plugin install git://github.com/seven1m/simple_restful_openid.git
+script/generate simple_restful_openid
+
+To sign in, browse to /session/new
+
+h2. Requirements
+
+Edge Rails or Rails 2.1+
+
+Copyright (c) 2008 Tim Morgan, released under the MIT license
