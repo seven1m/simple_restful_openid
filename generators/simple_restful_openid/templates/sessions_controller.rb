@@ -29,8 +29,7 @@ class SessionsController < ApplicationController
   def update
     store = OpenID::Store::Filesystem.new(RAILS_ROOT + '/tmp')
     consumer = OpenID::Consumer.new(session, store)
-    url = request.protocol + request.host_with_port + request.relative_url_root + request.path
-    response = consumer.complete(params.reject { |k, v| k !~ /^openid\./ }, url)
+    response = consumer.complete(params.reject { |k, v| k !~ /^openid\./ }, session_url)
     if response.status == :success
       # Awesome! Set the user identity url in the session
       session[:url] = response.identity_url
